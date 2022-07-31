@@ -6,13 +6,96 @@
   <title>Седона-форма отзыва</title>
 </head>
 <main>
-  <section>
-    <h1>Оставьте свой отзыв</h1>
-    <p>Помогите нашим отелям стать лучше! Оставьте отзыв о них, а так же о посещенных вами достопримечательностях</p>
-    </section>
-    <section>
-      <h1 class="visually-hidden">Форма отзыва</h1>
-      
+  <header class="main-header">
+    <nav class="main-nav">
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="#">
+              ГЛАВНАЯ
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="catalog.html">
+              ФОТО И ВИДЕО
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">
+              ФОРМА ОТЗЫВА
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              HTML ACADEMY
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <a class="main-header__logo" href="index.html">
+      <img class="main-header__logo-image" src="./img/logo-sedona.svg" width="185" height="96" alt="Седона">
+    </a>
+    <button class="main-header__menu-open" type="button">
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
+  </header>
+  <main class="page-main">
+    <div class="main-promo">
+      <img class="main-promo__logo" src="./img/sedona.svg" width="229" height="39" alt="Промо текст Седоны">
+    </div>
+    <section class="feedback">
+      <header class="feedback-header">
+        <div class="feedback-header__wrapper">
+          <h1 class="feedback-header__title">Оставьте свой отзыв</h1>
+          <p class="feedback-header__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а так же о
+            посещенных вами достопримечательностях</p>
+        </div>
+      </header>
+      <form class="feedback__form form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">
+              ПРЕДСТАВЬТЕСЬ:
+            </legend>
+            <ul class="form__group form__input-wrapper">
+              <li class="form__input form__input--fullname">
+                <label class="form__label" for="name">ИМЯ:</label>
+                <input class="form__input-text" type="text" name="name" placeholder="Имя" value="Петр">
+              </li>
+              <li class="form__input form__input--fullname">
+                <label class="form__label" for="surname">ФАМИЛИЯ:</label>
+                <input class="form__input-text" type="text" name="surname" placeholder="Фамилия" value="Пустота">
+              </li>
+              <li class="form__input form__input--fullname">
+                <label class="form__label" for="patronymic">ОТЧЕСТВО:</label>
+                <input class="form__input-text" type="text" name="patronymic" placeholder="Отчество" value="Викторович">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">
+              КОНТАКТНАЯ ИНФОРМАЦИЯ:
+            </legend>
+            <ul class="form__group">
+              <li class="form__input form__input--contacts">
+                <label class="form__label" for="phone">КОНТАКТНЫЙ ТЕЛЕФОН*:</label>
+                <input class="form__input-text" type="tel" id="phone" name="phone" placeholder="Введите телефон">
+                <span class="form__icon from__icon--phone"></span>
+              </li>
+              <li class="form__input form__input--contacts">
+                <label class="form__label" for="phone">ЭЛЕКТРОННАЯ ПОЧТА*:</label>
+                <input class="form__input-text" type="email" id="email" name="email" placeholder="Введите e-mail">
+                <span class="form__icon from__icon--email"></span>
+              </li>
+            </ul>
+          </fieldset>
+          
+
+
+
+
+      </form>
+
     </section>
 
-</main>
+  </main>
