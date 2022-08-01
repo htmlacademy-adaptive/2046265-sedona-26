@@ -13,22 +13,22 @@
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a href="#">
-              ГЛАВНАЯ
+              Главная
             </a>
           </li>
           <li class="site-list__item">
             <a href="catalog.html">
-              ФОТО И ВИДЕО
+              Фото и видео
             </a>
           </li>
           <li class="site-list__item">
             <a href="form.html">
-              ФОРМА ОТЗЫВА
+              Форма отзыва
             </a>
           </li>
           <li class="site-list__item">
             <a href="#">
-              HTML ACADEMY
+              HTML Academy
             </a>
           </li>
         </ul>
@@ -45,14 +45,15 @@
     <div class="main-promo">
       <img class="main-promo__logo" src="./img/sedona.svg" width="229" height="39" alt="Промо текст Седоны">
     </div>
+    <section class="page-main__header">
+      <div class="page-main__wrapper">
+        <h1 class="page-main__title">Оставьте свой отзыв</h1>
+        <p class="page-main__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а так же о
+          посещенных вами достопримечательностях</p>
+      </div>
+    </section>
     <section class="feedback">
-      <header class="feedback-header">
-        <div class="feedback-header__wrapper">
-          <h1 class="feedback-header__title">Оставьте свой отзыв</h1>
-          <p class="feedback-header__description">ПОМОГИТЕ НАШИМ ОТЕЛЯМ СТАТЬ ЛУЧШЕ! ОСТАВЬТЕ ОТЗЫВ О НИХ, А ТАК ЖЕ О
-            ПОСЕЩЕННЫХ ВАМИ ДОСТОПРИМЕЧАТЕЛЬНОСТЯХ</p>
-        </div>
-      </header>
+      <h1 class="visually-hidden">Форма отзыва</h1>
       <form class="feedback__form form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="form__fieldset form__fieldset--fullname">
           <legend class="form__legend form__legend--fullname">
@@ -60,15 +61,15 @@
           </legend>
           <ul class="form__group form__fullname-wrapper">
             <li class="form__input form__input--fullname">
-              <label class="form__label" for="firstname">ИМЯ:</label>
+              <label class="form__label" for="firstname">Имя:</label>
               <input class="form__input-text" type="text" name="firstname" id="firstname" placeholder="Петр">
             </li>
             <li class="form__input form__input--fullname">
-              <label class="form__label" for="lastname">ФАМИЛИЯ:</label>
+              <label class="form__label" for="lastname">Фамилия:</label>
               <input class="form__input-text" type="text" name="lastname" id="lastname" placeholder="Пустота">
             </li>
             <li class="form__input form__input--fullname">
-              <label class="form__label" for="middlename">ОТЧЕСТВО:</label>
+              <label class="form__label" for="middlename">Отчество:</label>
               <input class="form__input-text" type="text" name="middlename" id="middlename" placeholder="Викторович">
             </li>
           </ul>
@@ -151,13 +152,12 @@
           </ul>
           <fieldset class="form__fieldset form__fieldset--emotions">
             <legend class="form__legend-title form__legend-title--emotions">ОПИШИТЕ СВОИ ЭМОЦИИ:</legend>
+            <textarea class="form__textarea" name="message" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
-          <textarea class="form__textarea" name="message" placeholder="Опишите подробно все свои восторги"></textarea>
-        </fieldset>
-        <div class="form__submit-wrapper">
-          <button class="button form__button" type="submit">Отправить отзыв</button>
-          <p class="form__notification">*-ОБЯЗАТЕЛЬНОЕ ПОЛЕ</p>
-        </div>
+          <div class="form__submit-wrapper">
+            <button class="button form__button" type="submit">Отправить отзыв</button>
+            <p class="form__notification">*-ОБЯЗАТЕЛЬНОЕ ПОЛЕ</p>
+          </div>
       </form>
     </section>
   </main>
@@ -213,17 +213,19 @@
   </footer>
   <section class="modal-form modal-form--luck">
     <div class="modal-form__wrapper">
-    <h2 class="modal-form__title">ВАШ ОТЗЫВ ОТПРАВЛЕН!</h2>
-    <p class="modal-form__description">СПАСИБО ЗА ВАШЕ УЧАСТИЕ, ВАШ ОТЗЫВ УЖЕ ПОСТУПИЛ К НАМ. В БЛИЖАЙШЕЕ ВРЕМЯ МЫ ОПУБЛИКУЕМ ЕГО НА САЙТЕ.</p>
-    <button class="button modal-form__button" type="button">Закрыть окно</button>
+      <h2 class="modal-form__title">ВАШ ОТЗЫВ ОТПРАВЛЕН!</h2>
+      <p class="modal-form__description">СПАСИБО ЗА ВАШЕ УЧАСТИЕ, ВАШ ОТЗЫВ УЖЕ ПОСТУПИЛ К НАМ. В БЛИЖАЙШЕЕ ВРЕМЯ МЫ
+        ОПУБЛИКУЕМ ЕГО НА САЙТЕ.</p>
+      <button class="button modal-form__button" type="button">Закрыть окно</button>
     </div>
   </section>
   <section class="modal-form modal-form--failure">
     <div class="modal-form__wrapper">
-    <h2 class="modal-form__title">ЧТО-ТО ПОШЛО НЕ ТАК!</h2>
-    <p class="modal-form__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-    <button class="button modal-form__button" type="button">OK</button>
+      <h2 class="modal-form__title">ЧТО-ТО ПОШЛО НЕ ТАК!</h2>
+      <p class="modal-form__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="button modal-form__button" type="button">OK</button>
     </div>
   </section>
 </body>
+
 </html>
