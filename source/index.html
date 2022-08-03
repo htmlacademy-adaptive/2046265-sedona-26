@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="page__body">
@@ -14,42 +15,46 @@
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="#">
+          <li class="site-list__item site-list__item--main">
+            <a class="site-list__link" href="#">
               Главная
             </a>
           </li>
-          <li class="site-list__item">
-            <a href="catalog.html">
+          <li class="site-list__item site-list__item--multimedia">
+            <a class="site-list__link" href="catalog.html">
               Фото и видео
             </a>
           </li>
-          <li class="site-list__item">
-            <a href="form.html">
+          <li class="site-list__item site-list__item--form">
+            <a class="site-list__link" href="form.html">
               Форма отзыва
             </a>
           </li>
-          <li class="site-list__item">
-            <a href="#">
+          <li class="site-list__item site-list__item--academy">
+            <a class="site-list__link" href="#">
               HTML Academy
             </a>
           </li>
         </ul>
       </div>
     </nav>
-    <a class="main-header__logo">
-      <img class="main-header__logo-image" src="./img/logo-sedona.svg" width="185" height="96" alt="Седона">
-    </a>
-    <button class="main-header__menu-open" type="button">
-      <span class="visually-hidden">Открыть меню</span>
-    </button>
+    <div class="main-header__wrapper">
+      <a class="main-header__logo">
+        <img class="main-header__logo-image" src="./img/logo-sedona.svg" width="185" height="96" alt="Седона">
+      </a>
+      <button class="main-header__menu-open" type="button">
+        <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z" fill="#81B3D2" />
+        </svg>
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+    </div>
   </header>
   <main class="main-container">
-    <div class="main-promo">
-      <h1 class="visually-hidden">Добро пожаловать в седону
-        <img class="main-promo__logo" src="./img/welcome-sedona.svg" width="282" height="214"
-          alt="Welcome to the gorgeous Sedone 'Because the Grand Canyon sucks!">
-      </h1>
+    <div class="main-container__promo">
+      <h1 class="visually-hidden">Добро пожаловать в седону</h1>
+      <img class="main-container__promo-logo" src="./img/welcome-sedona.svg" width="282" height="214"
+        alt="Welcome to the gorgeous Sedone 'Because the Grand Canyon sucks!">
     </div>
     <section class="reasons">
       <div class="reasons__wrapper">
@@ -58,19 +63,23 @@
             Наши преимущества
           </h2>
           <h3 class="reasons__slogan">
-            СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!
+            СЕДОНА - НЕБОЛЬШОЙ <br>ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!
           </h3>
           <p class="reasons__intro">
             Рассмотрим 5 причин, по которым седона круче, чем Гранд Каньон!
           </p>
         </header>
         <ul class="reasons__list">
-          <li class="reasons__item reasons__item--background">
-            <h3 class="reasons__title reasons__title--colour">НАСТОЯЩИЙ ГОРОДОК</h3>
-            <span class="reasons__number">— №1 —</span>
-            <p class="reasons__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+          <li class="reasons__item reasons__item--city">
+            <div class="reasons__city">
+              <h3 class="reasons__title reasons__title--colour">НАСТОЯЩИЙ ГОРОДОК</h3>
+              <span class="reasons__number reasons__number--colour">— №1 —</span>
+              <p class="reasons__description reasons__description--colour">Седона не аттракцион для туристов, там течет
+                своя жизнь</p>
+            </div>
             <img class="reasons__pictures" src="./img/photo-city.jpg" width="320" height="260"
               alt="Фото городка Седоны">
+
             <ul class="advantages">
               <li class="advantages__item advantages__item--housing">
                 <h4 class="advantages__title">ЖИЛЬЕ</h4>
@@ -86,24 +95,27 @@
               </li>
             </ul>
           </li>
-          <li class="reasons__item reasons__item--background">
-            <h3 class="reasons__title reasons__title--colour">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
-            <span class="reasons__number">— №2 —</span>
-            <p class="reasons__description">Да, по нему можно пройтись! Если вы осмелитесь, конечно</p>
+          <li class="reasons__item reasons__item--bridge">
+            <div class="reasons__background">
+              <h3 class="reasons__title reasons__title--colour">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
+              <span class="reasons__number reasons__number--colour">— №2 —</span>
+              <p class="reasons__description reasons__description--colour">Да, по нему можно пройтись! Если вы
+                осмелитесь, конечно</p>
+            </div>
             <img class="reasons__picrures" src="./img/photo-bridge.jpg" width="320" height="260"
               alt="Фото моста дьявола">
           </li>
-          <li class="reasons__item">
+          <li class="reasons__item reasons__item--square">
             <h3 class="reasons__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
             <span class="reasons__number">— №3 —</span>
             <p class="reasons__description">Все интересные места находятся очень близко/p>
           </li>
-          <li class="reasons__item">
+          <li class="reasons__item reasons__item--road">
             <h3 class="reasons__title">КРАСИВАЯ ДОРОГА</h3>
             <span class="reasons__number">— №4 —</span>
             <p class="reasons__description">Ехать в седону из Лас-Вегаса совсем не скучно!</p>
           </li>
-          <li class="reasons__item">
+          <li class="reasons__item reasons__item--tourist">
             <h3 class="reasons__title">МАЛО ТУРИСТОВ</h3>
             <span class="reasons__number">— №5 —</span>
             <p class="reasons__description">Большинство едет в Гранд Каньон и толпится там</p>
@@ -112,29 +124,30 @@
       </div>
     </section>
     <section class="search">
-      <div class="search-wrapper">
+      <div class="search__wrapper">
         <h2 class="visually-hidden">Поиск гостиницы</h2>
         <h3 class="search__title">ЗАИНТЕРЕСОВАЛИСЬ?</h3>
         <p class="search__description">Укажите предполгаемые даты поездки, и мы покажем вам лучшие предложения гостиниц
           в Седоне</p>
+        </div>
         <a class="search__button button" href="#">НАЙТИ ГОСТИНИЦУ</a>
-      </div>
     </section>
     <section class="map">
       <h2 class="visually-hidden">Карта</h2>
-      <img class="map__image" src="./img/map.jpg" width="320" height="350" alt="Место расположения городка Седоны на карте">
+      <img class="map__image" src="./img/map.jpg" width="320" height="350"
+        alt="Место расположения городка Седоны на карте">
     </section>
   </main>
   <footer class="main-footer">
     <div class="main-footer__wrapper">
-      <div class="main-footer__hashtag hashtag">
-        <a class="hashtag__link" href="#">#VISITSEDONA</a>
+      <div class="main-footer__hashtag">
+        <a class="main-footer__hashtag-link" href="#">#VISITSEDONA</a>
       </div>
       <div class="main-footer__social social">
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-              <svg width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="social__icon-vkontakte" width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M23.45.95c.17-.55 0-.95-.8-.95h-2.62c-.67 0-.98.35-1.14.73 0 0-1.34 3.2-3.23 5.27-.61.6-.89.8-1.22.8-.17 0-.42-.2-.42-.74V.95c0-.66-.18-.95-.74-.95H9.15c-.42 0-.67.3-.67.6 0 .61.95.76 1.05 2.5v3.8c0 .84-.16.99-.5.99-.88 0-3.05-3.21-4.33-6.89-.25-.71-.5-1-1.17-1H.9C.15 0 0 .35 0 .73c0 .68.89 4.07 4.14 8.55C6.32 12.34 9.38 14 12.15 14c1.67 0 1.88-.37 1.88-1v-2.32c0-.73.16-.88.69-.88.38 0 1.05.2 2.61 1.67C19.11 13.22 19.4 14 20.41 14h2.62c.75 0 1.13-.37.91-1.1-.24-.72-1.09-1.77-2.21-3.02-.62-.7-1.54-1.47-1.81-1.86-.4-.49-.28-.7 0-1.14 0 0 3.2-4.43 3.53-5.93Z"
                   fill="#fff" />
@@ -142,9 +155,9 @@
               <span class="visually-hidden">ВКонтакте</span>
             </a>
           </li>
-          <li class="social__item">
+          <li class="social__item social__item--telegram">
             <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-              <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="social__icon-telegram" width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="m21.44 1.62-3.17 14.95c-.24 1.05-.86 1.31-1.75.82l-4.83-3.56-2.33 2.24c-.25.26-.47.47-.97.47l.35-4.91 8.95-8.09c.39-.35-.09-.54-.6-.2L6.01 10.32 1.26 8.82C.22 8.5.21 7.8 1.48 7.3L20.1.11c.87-.32 1.62.2 1.34 1.51Z"
                   fill="#fff" />
@@ -154,7 +167,7 @@
           </li>
           <li class="social__item">
             <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-              <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="social__icon-youtube" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M17.18 0H2.81C1.31 0 0 1.3 0 2.8v8.3C0 12.7 1.3 14 2.81 14h14.37A2.8 2.8 0 0 0 20 11.2V2.8c.1-1.5-1.2-2.8-2.8-2.8ZM7.03 10.4V3.6L13.87 7l-6.84 3.4Z"
                   fill="#fff" />
