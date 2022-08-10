@@ -3,16 +3,18 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Каталог Седоны</title>
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="page__body">
+  <div class="page__container">
   <header class="main-header">
     <nav class="main-nav">
-      <button class="main-nav__menu-close" type="button">
-        <span class="visually-hidden">Закрыть меню</span>
-      </button>
+      <a class="main-nav__logo">
+        <img class="main-nav__logo-image" src="img/logo-sedona.svg" width="185" height="96" alt="Седона">
+      </a>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--main">
@@ -37,25 +39,23 @@
           </li>
         </ul>
       </div>
-    </nav>
-    <div class="main-header__wrapper">
-      <a class="main-header__logo">
-        <img class="main-header__logo-image" src="./img/logo-sedona.svg" width="185" height="96" alt="Седона">
-      </a>
-      <button class="main-header__menu-open" type="button">
+      <div class="main-nav__menu-wrapper">
+      <button class="main-nav__menu-open" type="button">
         <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z" fill="#81B3D2" />
         </svg>
         <span class="visually-hidden">Открыть меню</span>
       </button>
-    </div>
+      </div>
+    </nav>
   </header>
   <main class="page-main">
     <div class="page-main__promo">
       <img class="page-main__promo-logo" src="./img/sedona.svg" width="229" height="39" alt="Промо текст Седоны">
     </div>
+    <div class="page-main__container">
     <section class="page-main__header">
-      <div class="page-main__wrapper">
+      <div class="page-main__wrapper-catalog">
         <h1 class="page-main__title">ФОТО И ВИДЕО</h1>
         <p class="page-main__description">Не можете решиться на путешествие из-за курса? Фотографии помогут
           вам забыть о политике и экономике.
@@ -71,6 +71,7 @@
               <img class="photo__image" src="./img/photo-sunset.jpg" width="280" height="280" alt="Неродные просторы">
             </a>
           </div>
+          <div class="photo__container">
           <div class="photo__information">
             <h3 class="photo__title">НЕРОДНЫЕ ПРОСТОРЫ</h3>
             <p class="photo__author">Автор фото: Борис</p>
@@ -84,6 +85,7 @@
               </svg></button>
             <span class="photo__count">1350</span>
           </div>
+          </div>
         </li>
         <li class="photo__item">
           <div class="photo__wrapper">
@@ -92,6 +94,7 @@
                 alt="Местная растительность">
             </a>
           </div>
+          <div class="photo__container">
           <div class="photo__information">
             <h3 class="photo__title">МЕСТНАЯ РАСТИТЕЛЬНОСТЬ</h3>
             <p class="photo__author">Автор фото: Сергей</p>
@@ -106,6 +109,7 @@
             </button>
             <span class="photo__count">143</span>
           </div>
+          </div>
         </li>
         <li class="photo__item">
           <div class="photo__wrapper">
@@ -113,6 +117,7 @@
               <img class="photo__image" src="./img/photo-road.jpg" width="280" height="280" alt="Дорога на север">
             </a>
           </div>
+          <div class="photo__container">
           <div class="photo__information">
             <h3 class="photo__title">ДОРОГА НА СЕВЕР</h3>
             <p class="photo__author">Автор фото: Петр</p>
@@ -127,6 +132,7 @@
             </button>
             <span class="photo__count">96</span>
           </div>
+          </div>
         </li>
         <li class="photo__item">
           <div class="photo__wrapper">
@@ -134,6 +140,7 @@
               <img class="photo__image" src="./img/photo-bridge.jpg" width="280" height="280" alt="Мост дьявола">
             </a>
           </div>
+          <div class="photo__container">
           <div class="photo__information">
             <h3 class="photo__title">МОСТ ДЬЯВОЛА</h3>
             <p class="photo__author">Автор фото: Антон</p>
@@ -146,6 +153,7 @@
                   fill="#000" />
               </svg></button>
             <span class="photo__count">254</span>
+          </div>
           </div>
         </li>
       </ul>
@@ -166,6 +174,7 @@
         </svg>
       </button>
     </section>
+    </div>
   </main>
   <footer class="main-footer">
     <div class="main-footer__wrapper">
@@ -217,6 +226,7 @@
       </div>
     </div>
   </footer>
+  </div>
 </body>
 
 </html>
