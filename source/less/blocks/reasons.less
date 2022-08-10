@@ -95,3 +95,143 @@
 .reasons__description--colour {
   color: #ffffff;
 }
+
+.reasons__advantages {
+  position: relative;
+  background-color: #ffffff;
+  font-family: "PT Sans", sans-serif;
+  list-style-type: none;
+  padding: 23px 18px 22px;
+}
+
+.reasons__item--housing {
+  padding-top: 8px;
+}
+
+.reasons__item--housing::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/icon-house.svg");
+  width: 39px;
+  height: 37px;
+  left: 18px;
+  top: 26px;
+  background-repeat: no-repeat;
+}
+
+.reasons__item--food::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/icon-burger.svg");
+  width: 40px;
+  height: 35px;
+  left: 18px;
+  top: 160px;
+  background-repeat: no-repeat;
+}
+
+.reasons__item--gift::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/icon-gift.svg");
+  width: 32px;
+  height: 38px;
+  left: 18px;
+  top: 265px;
+  background-repeat: no-repeat;
+}
+
+.reasons__title--advantages {
+  margin: 0;
+  margin-bottom: 16px;
+  text-align: left;
+  padding-left: 47px;
+}
+
+.reasons__description--advantages {
+  margin: 0;
+  margin-bottom: 30px;
+  text-align: left;
+  padding-left: 47px;
+}
+
+
+@media (min-width: @tablet-width) {
+  .reasons__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .reasons__block {
+    display: flex;
+  }
+
+  .reasons__title {
+    margin-bottom: 20px;
+  }
+
+  .reasons__description {
+    margin: 0;
+  }
+
+  .reasons__city {
+    width: 192px;
+    padding: 40px 32px 44px;
+  }
+
+  .reasons__landscapes {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .reasons__background {
+    width: 184px;
+    padding: 43px 36px 41px;
+  }
+
+  .reasons__item--square {
+    width: 189px;
+    padding: 41px 34px 63px 33px;
+  }
+
+  .reasons__item--road {
+    width: 162px;
+    padding: 42px 48px 41px 46px;
+  }
+
+  .reasons__item--tourist {
+    width: 175px;
+    padding: 42px 40px 42px 41px;
+  }
+
+  .reasons__advantages {
+    display: grid;
+    grid-template-columns: 256px 256px 256px;
+    padding: 0;
+  }
+
+  .reasons__item--housing {
+    padding: 158px 35px 59px 36px;
+  }
+
+  .reasons__item--food {
+    padding: 159px 38px 59px 38px;
+  }
+
+  .reasons__item--gift {
+    padding: 158px 31px 81px 32px;
+  }
+
+  .reasons__title--advantages {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 23px;
+  }
+
+  .reasons__description--advantages {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+}

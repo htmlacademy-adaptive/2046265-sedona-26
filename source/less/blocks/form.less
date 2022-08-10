@@ -42,7 +42,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  width: 280px;
+  width: 264px;
   padding: 16px 0 16px 16px;
   border: none;
   background-color: #f2f2f2;
@@ -158,4 +158,72 @@
   text-align: right;
   margin: 0;
   padding-right: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .form__group {
+    padding: 0;
+  }
+
+  .form__legend--fullname {
+    padding: 0;
+    margin-bottom: 28px;
+  }
+
+  .form__legend-title--contacts {
+    padding: 0;
+    margin-bottom: 28px;
+  }
+
+  .form__fullname-wrapper {
+    margin-right: 43px;
+  }
+
+  .form__contacts-wrapper {
+    margin-left: 44px;
+  }
+
+  .form__input {
+    margin-bottom: 37px;
+  }
+
+  .form__legend-title--impression {
+    padding: 36px 123px 0;
+    margin-bottom: 28px;
+  }
+
+  .form__impression-wrapper {
+    display: grid;
+    grid-template-columns: 280px 280px;
+    justify-content: center;
+  }
+
+  .form__input--impression {
+    padding: 10px 0 10px 62px;
+    margin-bottom: 16px;
+  }
+
+  .form__input--impression:nth-child(2n) {
+    margin-left: 16px;
+  }
+
+  .form__legend-title--sights {
+    padding: 32px 170px 0;
+    margin-bottom: 28px;
+  }
+
+  .form__sights-wrapper {
+    display: grid;
+    grid-template-columns: 224px 224px;
+    justify-content: center;
+  }
+
+  .form__input--sights {
+    padding: 10px 0 10px 62px;
+    margin-bottom: 16px;
+  }
+
+  .form__input--sights:nth-child(2n) {
+    margin-left: 32px;
+  }
 }
