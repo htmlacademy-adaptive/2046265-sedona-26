@@ -3,16 +3,18 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="page__body">
+  <div class="page__container">
   <header class="main-header">
     <nav class="main-nav">
-      <button class="main-nav__menu-close" type="button">
-        <span class="visually-hidden">Закрыть меню</span>
-      </button>
+      <a class="main-nav__logo">
+        <img class="main-nav__logo-image" src="img/logo-sedona.svg" width="185" height="96" alt="Седона">
+      </a>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--main">
@@ -37,23 +39,20 @@
           </li>
         </ul>
       </div>
-    </nav>
-    <div class="main-header__wrapper">
-      <a class="main-header__logo">
-        <img class="main-header__logo-image" src="./img/logo-sedona.svg" width="185" height="96" alt="Седона">
-      </a>
-      <button class="main-header__menu-open" type="button">
+      <div class="main-nav__menu-wrapper">
+      <button class="main-nav__menu-open" type="button">
         <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z" fill="#81B3D2" />
         </svg>
         <span class="visually-hidden">Открыть меню</span>
       </button>
-    </div>
+      </div>
+    </nav>
   </header>
   <main class="main-container">
     <div class="main-container__promo">
       <h1 class="visually-hidden">Добро пожаловать в седону</h1>
-      <img class="main-container__promo-logo" src="./img/welcome-sedona.svg" width="282" height="214"
+      <img class="main-container__promo-logo" src="img/welcome-sedona.svg" width="282" height="214"
         alt="Welcome to the gorgeous Sedone 'Because the Grand Canyon sucks!">
     </div>
     <section class="reasons">
@@ -71,39 +70,42 @@
         </header>
         <ul class="reasons__list">
           <li class="reasons__item reasons__item--city">
+            <div class="reasons__block">
             <div class="reasons__city">
               <h3 class="reasons__title reasons__title--colour">НАСТОЯЩИЙ ГОРОДОК</h3>
               <span class="reasons__number reasons__number--colour">— №1 —</span>
               <p class="reasons__description reasons__description--colour">Седона не аттракцион для туристов, там течет
                 своя жизнь</p>
             </div>
-            <img class="reasons__pictures" src="./img/photo-city.jpg" width="320" height="260"
+            <img class="reasons__pictures" src="img/photo-city.jpg" width="320" height="260"
               alt="Фото городка Седоны">
-
-            <ul class="advantages">
-              <li class="advantages__item advantages__item--housing">
-                <h4 class="advantages__title">ЖИЛЬЕ</h4>
-                <p class="advantages__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            </div>
+            <ul class="reasons__advantages">
+              <li class="reasons__item reasons__item--housing">
+                <h4 class="reasons__title reasons__title--advantages">ЖИЛЬЕ</h4>
+                <p class="reasons__description reasons__description--advantages">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
-              <li class="advantages__item advantages__item--food">
-                <h4 class="advantages__title">ЕДА</h4>
-                <p class="advantages__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              <li class="reasons__item reasons__item--food">
+                <h4 class="reasons__title reasons__title--advantages">ЕДА</h4>
+                <p class="reasons__description reasons__description--advantages">Всегда заказывайте фирменный бургер, <br>вы не разочаруетесь!</p>
               </li>
-              <li class="advantages__item advantages__item--gift">
-                <h4 class="advantages__title">СУВЕНИРЫ</h4>
-                <p class="advantages__description">Не только китайского, но и местного производства!</p>
+              <li class="reasons__item reasons__item--gift">
+                <h4 class="reasons__title reasons__title--advantages">СУВЕНИРЫ</h4>
+                <p class="reasons__description reasons__description--advantages">Не только китайского, но и местного производства!</p>
               </li>
             </ul>
           </li>
           <li class="reasons__item reasons__item--bridge">
+            <div class="reasons__landscapes">
             <div class="reasons__background">
               <h3 class="reasons__title reasons__title--colour">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
               <span class="reasons__number reasons__number--colour">— №2 —</span>
               <p class="reasons__description reasons__description--colour">Да, по нему можно пройтись! Если вы
                 осмелитесь, конечно</p>
             </div>
-            <img class="reasons__picrures" src="./img/photo-bridge.jpg" width="320" height="260"
+            <img class="reasons__picrures" src="img/photo-bridge.jpg" width="320" height="260"
               alt="Фото моста дьявола">
+            </div>
           </li>
           <li class="reasons__item reasons__item--square">
             <h3 class="reasons__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
@@ -134,7 +136,7 @@
     </section>
     <section class="map">
       <h2 class="visually-hidden">Карта</h2>
-      <img class="map__image" src="./img/map.jpg" width="320" height="350"
+      <img class="map__image" src="img/map.jpg" width="320" height="350"
         alt="Место расположения городка Седоны на карте">
     </section>
   </main>
@@ -188,6 +190,7 @@
       </div>
     </div>
   </footer>
+  </div>
 </body>
 
 </html>
