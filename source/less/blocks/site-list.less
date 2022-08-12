@@ -1,31 +1,14 @@
 .site-list {
   margin: 0;
   padding: 0;
-  min-height: 55px;
 }
 
 .site-list__item {
   list-style-type: none;
-}
-
-.site-list__item--main {
-  padding: 17px 108px 12px 109px;
-}
-
-.site-list__item--multimedia {
-  padding: 17px 83px 12px 81px;
-}
-
-.site-list__item--form {
   padding: 17px 78px 12px 77px;
 }
 
-.site-list__item--academy {
-  padding: 17px 81px 12px 81px;
-}
-
 .site-list__link {
-  min-height: 26px;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -34,4 +17,48 @@
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .site-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .site-list__item--multimedia {
+    margin-right: 155px;
+  }
+
+  .site-list__item {
+    width: 153px;
+    padding: 18px 0 17px 0;
+  }
+
+  .site-list__link {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 26px;
+    color: #000000;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .site-list__item {
+    width: 240px;
+    padding: 18px 0 17px 0;
+  }
+
+  .site-list__item--multimedia {
+    margin-right: 240px;
+  }
 }

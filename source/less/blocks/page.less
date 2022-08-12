@@ -1,10 +1,38 @@
-.page__body {
-  width: 320px;
-  height: 100%;
-  margin: 0 auto;
-  padding: 0;
+.page {
   font-family: "PT Sans", sans-serif;
+  height: 100%;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.page__body {
+  min-height: 100%;
+  margin: 0;
   color: #000000;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
   text-align: center;
+}
+
+.page__container {
+  width: 320px;
+  padding: 0;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+@media (min-width: @tablet-width) {
+  .page__container {
+    width: @tablet-width;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page__container {
+    width: @desktop-width;
+    margin: 0 auto;
+    padding: 0;
+  }
 }
