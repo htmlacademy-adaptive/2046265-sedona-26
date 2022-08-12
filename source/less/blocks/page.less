@@ -18,13 +18,22 @@
   margin: 0 auto;
   padding: 0 30px;
   background-color: #ffffff;
+}
 
-  @media (min-width: @tablet-width) {
+@media (min-width: @tablet-width) {
+  .page__container {
     width: @tablet-width;
     padding: 0 50px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: @desktop-width;
+    margin: 0 auto;
+    background-color: #ffffff;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .page__container {
+    width: @desktop-width;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+

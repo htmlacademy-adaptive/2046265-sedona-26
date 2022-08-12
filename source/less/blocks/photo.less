@@ -97,3 +97,14 @@
     background-color: #eaeaea;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .photo {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+  }
+
+  .photo__item:first-child {
+    grid-column: 1/4;
+  }
+}
