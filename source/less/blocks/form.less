@@ -26,7 +26,7 @@
 
 .form__input {
   position: relative;
-  margin-bottom: 16px;
+  /* margin-bottom: 16px; */
 }
 
 .form__label {
@@ -81,14 +81,11 @@
   right: 0;
 }
 
-.form__input--impression {
+.form__control {
+  display: block;
   padding: 10px 0 10px 62px;
   text-align: left;
-}
-
-.form__input--sights {
-  padding: 10px 0 10px 62px;
-  text-align: left;
+  margin-bottom: 16px;
 }
 
 .form__legend-title--impression {
@@ -223,7 +220,7 @@
     position: absolute;
     content: "";
     width: 320px;
-    border: 1px solid #e5e5e5;
+    height: 1px;
     background-color: #e5e5e5;
     top: 0;
     left: 0;
@@ -233,7 +230,7 @@
     position: absolute;
     content: "";
     width: 320px;
-    border: 1px solid #e5e5e5;
+    height: 1px;
     background-color: #e5e5e5;
     top: 0;
     left: 0;
@@ -243,7 +240,7 @@
     position: absolute;
     content: "";
     width: 320px;
-    border: 1px solid #e5e5e5;
+    height: 1px;
     background-color: #e5e5e5;
     top: 0;
     left: 0;
@@ -253,7 +250,7 @@
     position: absolute;
     content: "";
     width: 320px;
-    border: 1px solid #e5e5e5;
+    height: 1px;
     background-color: #e5e5e5;
     top: 0;
     left: 0;
@@ -263,7 +260,7 @@
     position: absolute;
     content: "";
     width: 320px;
-    border: 1px solid #e5e5e5;
+    height: 1px;
     background-color: #e5e5e5;
     top: 0;
     left: 0;
@@ -312,7 +309,11 @@
     margin-left: 44px;
   }
 
-  .form__input {
+  .form__input--fullname {
+    margin-bottom: 16px;
+  }
+
+  .form__input--contacts {
     margin-bottom: 16px;
   }
 
@@ -345,10 +346,10 @@
     display: grid;
     grid-template-columns: 280px 280px;
     justify-content: flex-start;
-    padding-left: 32px;
+    padding-left: 37px;
   }
 
-  .form__input--impression {
+  .form__control {
     padding: 10px 0 10px 62px;
     margin-bottom: 16px;
   }
@@ -386,12 +387,7 @@
     display: grid;
     grid-template-columns: 224px 224px;
     justify-content: flex-start;
-    padding-left: 81px;
-  }
-
-  .form__input--sights {
-    padding: 10px 0 10px 62px;
-    margin-bottom: 16px;
+    padding-left: 85px;
   }
 
   .form__input--sights:nth-child(2n) {
@@ -507,8 +503,8 @@
   }
 
   .form__legend-title--sights {
-    padding: 52px 327px 0;
-    margin-bottom: 28px;
+    padding: 52px 327px 0 327px;
+    margin-bottom: 27px;
   }
 
   .form__legend-title--sights::before {
@@ -536,10 +532,12 @@
     display: flex;
   }
 
-  .form__input--sights {
-    margin: 0;
-    margin-right: 64px;
+  .form__control {
     padding: 10px 0 10px 62px;
+  }
+
+  .form__input--sights {
+    margin-right: 64px;
   }
 
   .form__sights-wrapper .form__input--sights:last-child {
@@ -547,12 +545,11 @@
   }
 
   .form__input--sights:nth-child(2n) {
-    margin: 0;
-    margin-right: 64px;
+    margin-left: 0;
   }
 
   .form__legend-title--emotions {
-    padding: 56px 280px 0;
+    padding: 42px 280px 0;
     width: 400px;
   }
 
@@ -563,7 +560,7 @@
     height: 1px;
     background-color: #d8d8d8;
     left: 0;
-    top: 70px;
+    top: 54px;
   }
 
   .form__legend-title--emotions::after {
@@ -573,7 +570,7 @@
     height: 1px;
     background-color: #d8d8d8;
     right: 0;
-    top: 70px;
+    top: 54px;
   }
 
   .form__textarea {
