@@ -9,8 +9,28 @@
   overflow: hidden;
 }
 
-@media (min-width: @tablet-width) {
-  br {
+@media (max-width: @mobile-width-only) {
+  .desktop-hidden {
+    display: none;
+  }
+
+  .hidden {
+    display: none;
+  }
+}
+
+@media (max-width: @tablet-width-only) {
+  .mobile-hidden {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .hidden {
+    display: none;
+  }
+
+  .mobile-hidden {
     display: none;
   }
 }
