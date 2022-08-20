@@ -1,9 +1,5 @@
-.video {
-  position: relative;
-}
-
 .video__wrapper {
-  padding: 17px 26px 38px 28px;
+  padding: 20px 26px 35px 28px;
 }
 
 .video__title {
@@ -24,10 +20,17 @@
   text-transform: uppercase;
 }
 
+.video__container {
+  position: relative;
+}
+
 .video__play {
+  border: none;
   position: absolute;
-  top: 230px;
-  right: 125px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0;
 }
 
 @media (min-width: @tablet-width) {

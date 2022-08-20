@@ -1,7 +1,33 @@
+.copyright {
+  position: relative;
+}
+
 .copyright__link {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   text-decoration: none;
   color: #000000;
+}
+
+.copyright__icon {
+  position: absolute;
+  left: 196px;
+  top: 37px;
+}
+
+@media (min-width: @tablet-width) {
+  .copyright__icon {
+    position: absolute;
+    top: 21px;
+    left: 220px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .copyright__icon {
+    position: absolute;
+    top: 45px;
+    left: 375px;
+  }
 }
