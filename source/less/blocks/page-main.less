@@ -1,6 +1,7 @@
 .page-main__promo {
+  position: relative;
   width: 320px;
-  min-height: 214px;
+  min-height: 158px;
   background-image: url("../img/phone/catalog-form-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -11,13 +12,29 @@
   padding-top: 52px;
 }
 
+@media (max-width: @mobile-width-only) {
+  .page-main__promo::after {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 57px;
+    background-image: url("../img/phone/intro-triangle.svg");
+    bottom: 0;
+    left: 0;
+  }
+}
+
 .page-main__header {
   font-family: "PT Sans", sans-serif;
   background-color: #ffffff;
 }
 
-.page-main__wrapper {
-  padding: 33px 20px 20px;
+.page-main__wrapper-catalog {
+  padding: 36px 20px 33px;
+}
+
+.page-main__wrapper-form {
+  padding: 36px 20px 28px;
 }
 
 .page-main__title {
@@ -26,7 +43,11 @@
   line-height: 26px;
   color: #000000;
   margin: 0;
-  margin-bottom: 46px;
+  margin-bottom: 28px;
+}
+
+.page-main__title-form {
+  margin-bottom: 24px;
 }
 
 .page-main__description {
@@ -50,6 +71,40 @@
   font-family: "PT Sans", sans-serif;
 }
 
+@media (max-width: @mobile-width-only) {
+  .page-main__header {
+    position: relative;
+  }
+
+  .page-main__wrapper-catalog {
+    padding: 36px 20px 33px;
+  }
+
+  .page-main__wrapper-catalog::after {
+    position: absolute;
+    content: "";
+    width: 320px;
+    border: 1px solid #e5e5e5;
+    background-color: #e5e5e5;
+    bottom: -4px;
+    left: 0;
+  }
+
+  .page-main__video-gallery {
+    position: relative;
+  }
+
+  .page-main__video-gallery::before {
+    position: absolute;
+    content: "";
+    width: 320px;
+    border: 1px solid #e5e5e5;
+    background-color: #e5e5e5;
+    top: 0;
+    left: 0;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .page-main__container {
     width: 648px;
@@ -70,14 +125,16 @@
   }
 
   .page-main__title {
+    font-size: 30px;
+    line-height: 26px;
     margin-bottom: 26px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-main__container {
-    width: 1200px;
-    margin: 0 auto;
+    max-width: 1200px;
+    margin: 0;
   }
 
   .page-main__container-form {
@@ -86,11 +143,12 @@
   }
 
   .page-main__wrapper-catalog {
+    width: 458px;
     padding: 100px 372px 65px 370px;
   }
 
   .page-main__wrapper-form {
-    padding: 115px 262px 67px 264px;
+    padding: 115px 260px 67px 264px;
   }
 
   .page-main__title {

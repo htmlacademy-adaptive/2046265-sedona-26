@@ -1,8 +1,25 @@
 .main-container__promo {
-  padding-top: 90px;
+  position: relative;
   min-height: 389px;
   background-color: #3f5e72;
   background-image: url("../img/phone/index-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.main-container__promo-logo {
+  padding-top: 90px;
+}
+
+
+@media (max-width: @mobile-width-only) {
+  .main-container__promo::after {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 57px;
+    background-image: url("../img/phone/intro-triangle.svg");
+    bottom: 0;
+    left: 0;
+  }
 }

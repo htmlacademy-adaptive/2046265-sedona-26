@@ -1,7 +1,3 @@
-.photo__item {
-  padding: 24px 20px 25px;
-}
-
 .photo__wrapper {
   background-color: #ff8c00;
 }
@@ -10,14 +6,18 @@
   text-align: left;
 }
 
+.photo__image {
+  display: block;
+}
+
 .photo__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
   color: #000000;
   margin: 0;
-  margin-top: 15px;
-  margin-bottom: 10px;
+  margin-top: 17px;
+  margin-bottom: 3px;
 }
 
 .photo__author {
@@ -34,18 +34,57 @@
 }
 
 .photo__like {
-  margin-right: 14px;
+  margin-right: 11px;
   border: none;
   background-color: #ffffff;
+  padding: 0;
 }
 
 .photo__count {
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
-  text-transform: uppercase;
   color: #000000;
-  padding-bottom: 5px;
+}
+
+@media (max-width: @mobile-width-only) {
+  .photo {
+    position: relative;
+  }
+
+  .photo__item {
+    padding: 24px 20px 20px;
+  }
+
+  .photo__item::after {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 1px;
+    background-color: #e5e5e5;
+    top: 425px;
+    left: 0;
+  }
+
+  .photo__item::before {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 1px;
+    background-color: #e5e5e5;
+    top: 850px;
+    left: 0;
+  }
+
+  .photo__likes::after {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 1px;
+    background-color: #e5e5e5;
+    bottom: 420px;
+    left: 0;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -68,7 +107,7 @@
     background-color: #f2f2f2;
   }
 
-  .photo__item:nth-child(3) .photo__container {
+  .photo__container--background {
     background-color: #eaeaea;
   }
 
@@ -93,7 +132,7 @@
     margin-right: 9px;
   }
 
-  .photo__item:nth-child(3) .photo__like {
+  .photo__like--background {
     background-color: #eaeaea;
   }
 }
@@ -106,5 +145,45 @@
 
   .photo__item:first-child {
     grid-column: 1/4;
+  }
+
+  .photo__item {
+    position: relative;
+  }
+
+  .photo__item:first-child .photo__container {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    width: 1200px;
+  }
+
+  .photo__container {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    width: 400px;
+  }
+
+  .photo__title {
+    color: #ffffff;
+  }
+
+  .photo__author {
+    color: #ffffff;
+  }
+
+  .photo__like {
+    background: transparent;
+  }
+
+  .photo__like-icon path {
+    opacity: 1;
+    fill: #ffffff;
+  }
+
+
+  .photo__count {
+    color: #ffffff;
   }
 }

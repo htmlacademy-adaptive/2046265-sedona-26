@@ -1,5 +1,5 @@
 .video__wrapper {
-  padding: 17px 26px 38px 28px;
+  padding: 20px 26px 35px 28px;
 }
 
 .video__title {
@@ -20,12 +20,29 @@
   text-transform: uppercase;
 }
 
+.video__container {
+  position: relative;
+}
+
+.video__play {
+  border: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
 @media (min-width: @tablet-width) {
   .video__wrapper {
+    width: 445px;
     padding: 58px 102px 66px 101px;
   }
 
   .video__title {
+    font-size: 30px;
+    line-height: 26px;
     margin-bottom: 53px;
   }
 }
