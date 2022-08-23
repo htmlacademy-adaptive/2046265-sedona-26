@@ -1,24 +1,93 @@
-.main-container__promo {
-  position: relative;
-  min-height: 389px;
-  background-color: #3f5e72;
-  background-image: url("../img/phone/index-background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.main-container__promo-logo {
-  padding-top: 90px;
-}
-
-
 @media (max-width: @mobile-width-only) {
+  .main-container__promo {
+    position: relative;
+    min-height: 389px;
+    background-color: #3f5e72;
+    background-image: url("../img/phone/index-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .main-container__promo {
+      background-image: url("../img/phone/index-background@2x.jpg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .main-container__promo-logo {
+    padding-top: 90px;
+  }
+
   .main-container__promo::after {
     content: "";
     position: absolute;
     width: 320px;
     height: 57px;
     background-image: url("../img/phone/intro-triangle.svg");
+    bottom: 0;
+    left: 0;
+  }
+}
+
+
+@media (min-width: @tablet-width) {
+  .main-container__promo-logo {
+    width: 461px;
+    height: 350px;
+    padding-top: 77px;
+  }
+
+  .main-container__promo {
+    position: relative;
+    min-height: 518px;
+    background-image: url("../img/tablet/index-background-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/tablet/index-background-tablet@2x.jpg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .main-container__promo::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/tablet/intro-triangle.svg");
+    width: 768px;
+    height: 57px;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-container__promo-logo {
+    width: 460px;
+    height: 350px;
+    padding-top: 78px;
+  }
+
+  .main-container__promo {
+    position: relative;
+    min-height: 518px;
+    background-image: url("../img/desktop/index-background-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/desktop/index-background-desktop@2x.jpg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .main-container__promo::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/desktop/intro-triangle-desktop.svg");
+    width: 1200px;
+    height: 57px;
     bottom: 0;
     left: 0;
   }
