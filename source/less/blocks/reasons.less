@@ -50,11 +50,6 @@
   margin-bottom: 10px;
 }
 
-.reasons__title--colour {
-  color: #ffffff;
-  margin-bottom: 11px;
-}
-
 .reasons__number {
   font-weight: 400;
   font-size: 14px;
@@ -75,11 +70,6 @@
   color: #333333;
   margin: 0;
   margin-top: 13px;
-}
-
-.reasons__description--colour {
-  color: #ffffff;
-  margin-top: 17px;
 }
 
 .reasons__title--advantages {
@@ -198,6 +188,16 @@
     left: 15px;
     bottom: 162px;
   }
+
+  .reasons__title--colour {
+    color: #ffffff;
+    margin-bottom: 11px;
+  }
+
+  .reasons__description--colour {
+    color: #ffffff;
+    margin-top: 17px;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -218,12 +218,23 @@
 
   .reasons__block {
     display: flex;
+    line-height: 0;
+  }
+
+  .reasons__pictures {
+    width: 512px;
+    height: auto;
   }
 
   .reasons__title {
     margin-bottom: 11px;
     font-size: 21px;
     line-height: 26px;
+  }
+
+  .reasons__title--colour {
+    color: #ffffff;
+    margin-bottom: 13px;
   }
 
   .reasons__description {
@@ -233,6 +244,11 @@
     line-height: 21px;
   }
 
+  .reasons__description--colour {
+    color: #ffffff;
+    margin-top: 23px;
+  }
+
   .reasons__city {
     width: 192px;
     padding: 40px 32px 44px;
@@ -240,11 +256,18 @@
 
   .reasons__item--bridge {
     width: 768px;
+    line-height: 0;
   }
 
   .reasons__landscapes {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .reasons__image {
+    width: 512px;
+    height: auto;
   }
 
   .reasons__background {
@@ -353,7 +376,7 @@
 
   .reasons__city {
     width: 295px;
-    padding: 47px 52px  56px 53px;
+    padding: 47px 52px 56px 53px;
   }
 
   .reasons__item--bridge {
@@ -365,6 +388,16 @@
     padding: 51px 78px  52px 79px;
   }
 
+  .reasons__pictures {
+    width: 800px;
+    height: auto;
+  }
+
+  .reasons__image {
+    width: 800px;
+    height: auto;
+  }
+
   .reasons__item--square {
     width: 315px;
     padding: 42px 43px 62px 42px;
@@ -372,7 +405,7 @@
 
   .reasons__item--road {
     width: 292px;
-    padding: 42px 54px 64px;
+    padding: 42px 54px 62px;
   }
 
   .reasons__item--tourist {
