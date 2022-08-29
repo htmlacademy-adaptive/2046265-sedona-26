@@ -32,9 +32,6 @@
   .mobile-hidden {
     display: none;
   }
-  .desktop-hidden {
-    display: none;
-  }
 }
 @media (min-width: 1200px) {
   .mobile-hidden {
@@ -1081,6 +1078,7 @@
     min-height: 300px;
     background-image: url("../img/desktop/catalog-form-background-desktop.jpg");
     background-size: cover;
+    background-position: bottom;
   }
   .page-main__promo::after {
     position: absolute;
@@ -1334,6 +1332,10 @@
     width: 648px;
     min-height: 500px;
     margin-bottom: 41px;
+  }
+  .video__play {
+    top: 47%;
+    left: 50%;
   }
 }
 @media (min-width: 1200px) {
