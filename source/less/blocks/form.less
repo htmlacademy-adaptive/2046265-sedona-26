@@ -63,6 +63,16 @@
   color: #000000;
 }
 
+.form__input-text:hover {
+  background-color: #e5e5e5;
+}
+
+.form__input-text:active {
+  background-color: #ffffff;
+  outline: 4px solid #e5e5e5;
+}
+
+
 .form__legend-title--contacts {
   padding: 25px 41px 0;
 }
@@ -111,6 +121,14 @@
   background-color: #f2f2f2;
 }
 
+.form__control:hover .form__control-mark {
+  background-color: #e5e5e5;
+}
+
+.form__control:active .form__control-mark {
+  background-color: #d5d5d5;
+}
+
 .form__control-input[type="radio"] + .form__control-mark {
   border-radius: 50%;
 }
@@ -135,6 +153,15 @@
   border-radius: 4px;
   background-color: #f2f2f2;
 }
+
+.form__control:hover .form__control-check-mark {
+  background-color: #e5e5e5;
+}
+
+.form__control:active .form__control-check-mark {
+  background-color: #d5d5d5;
+}
+
 
 .form__control-input:checked + .form__control-check-mark {
   background-image: url("../img/phone/tick.svg");
