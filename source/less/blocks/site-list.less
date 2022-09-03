@@ -5,7 +5,6 @@
 
 .site-list__item {
   list-style-type: none;
-  padding: 17px 78px 12px 77px;
   box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
@@ -19,6 +18,23 @@
   text-decoration: none;
   text-align: center;
 }
+
+@media (max-width: @mobile-width-only) {
+  .site-list__link {
+    display: block;
+    padding: 17px 78px 12px 77px;
+  }
+
+  .site-list__link:hover {
+    background-color: #669ec0;
+  }
+
+  .site-list__link:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
 
 @media (min-width: @tablet-width) {
   .site-list {
