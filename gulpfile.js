@@ -48,8 +48,8 @@ const scripts = () => {
 
 const optimizeImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
-   .pipe(squoosh())
-   .pipe(gulp.dest('build/img'))
+  .pipe(squoosh())
+  .pipe(gulp.dest('build/img'))
 }
 
 const copyImages = () => {
@@ -61,10 +61,10 @@ const copyImages = () => {
 
 const createWebp = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
-   .pipe(squoosh({
-     webp: {}
-    }))
-   .pipe(gulp.dest('build/img'));
+  .pipe(squoosh({
+    webp: {}
+  }))
+  .pipe(gulp.dest('build/img'));
 }
 
 // SVG
