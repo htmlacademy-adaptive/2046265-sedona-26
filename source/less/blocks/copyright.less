@@ -1,7 +1,3 @@
-.copyright {
-  position: relative;
-}
-
 .copyright__link {
   font-weight: 400;
   font-size: 14px;
@@ -11,10 +7,15 @@
 }
 
 .copyright__icon {
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+/* .copyright__icon {
   position: absolute;
   left: 197px;
   top: 41px;
-}
+} */
 
 .copyright__link:hover {
   color: #81b3d2;
@@ -35,16 +36,14 @@
 
 @media (min-width: @tablet-width) {
   .copyright__icon {
-    position: absolute;
-    top: 44px;
-    left: 218px;
+    vertical-align: middle;
+    margin-left: 10px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .copyright__icon {
-    position: absolute;
-    top: 45px;
-    left: 375px;
+    vertical-align: middle;
+    margin-left: 10px;
   }
 }

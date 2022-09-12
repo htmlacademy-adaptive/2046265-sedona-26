@@ -44,7 +44,7 @@
     min-height: 56px;
   }
 
-  .site-list__item--multimedia {
+  .site-list .site-list__item:nth-child(4n+2) {
     margin-right: 155px;
   }
 
@@ -65,6 +65,15 @@
     text-align: center;
   }
 
+  .site-list__link:hover {
+    color: #81b3d2;
+  }
+
+  .site-list__link:active {
+    color: #000000;
+    opacity: 0.3;
+  }
+
   .site-list__link--active {
     color: #766357;
   }
@@ -74,7 +83,6 @@
   .site-list {
     width: 1200px;
     display: flex;
-    flex-direction: row;
     min-height: 56px;
   }
 
@@ -82,7 +90,7 @@
     width: 240px;
   }
 
-  .site-list__item--multimedia {
+  .site-list .site-list__item:nth-child(4n+2) {
     margin-right: 240px;
   }
 }
